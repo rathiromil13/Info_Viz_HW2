@@ -1,5 +1,32 @@
 # DS-5500-HW 2
 
+## Solution 2:
+
+For this problem, I compared my visualization to that of Monica Mishra.
+
+Link: https://colab.research.google.com/drive/1v8EY74vQxPubjXHywpDUYo7a3FMj-GuB
+
+The similarity for the whole comparision is that we've both used world4_region file to get the distribution around 4 regions. The plot used for comparison across continents is similar except for nature of plot. We've both used interactive plots for comparing distribution across countries.
+
+For visualization the distribution of income (GDP / capita) across continents, the major difference in our plot is that my plot is static while her's is interactive. It's really interesting to see this interactive plot where you can hover on the line and see the continent other than the legend which makes it visually appealing.  
+Monica has used a different time range (1800-2000) and (2000-2040) and shown the change over time using two different graphs while I've used one static plot for the time range (1960 to Present). Monica's plot is very easy to interprete with well defined X-axis and Y-axis along with appropriate color scheme for the continents while it is little confusing to understand the Y-axis values. The obersvations Monica made for different time schemes are interpretable.
+
+For visualization of distribution of income (GDP / capita) across countries, we've both used interactive plots but the way we've applied it is very different. It is interesting to see the line plot Monica has used for this task. One plot shows change in GDP per Capita over time for all countries wherease the other one shows the same for African countries. While it is easy to interprete the values of each axis but at the same time, it is difficult to comprehend the visualiztion over countries as there are so many countries, on hovering it shows the label of all countries where few countries seem to have same color possibly due to limited color pallet of the library. For this problem, I believe the plot I've used where all the countries are on a map and change over time can be seen through color scheme is more effective.
+
+
+## Solution 3:
+
+For this problem, I compared my visualization to that of Rutu Nanavati
+
+Link: https://github.com/nanavatirutu/DS5500
+
+The similarity in our visualization is that we've used static plots to answer the question. The time range selected on X-axis is also similar. The differences are again the way we've implemented the plots. Rutu has used three different plots with one Y-axis while I've used five plots each with multiple Y-axes. Rutu has compared the target variables across time for six different continenets while I've processed it down to four.
+
+Rutu has seperately ploted GDP (Income) per Capita with time, Life Expectancy with time and Infant Mortality Rate with time for six continents which is easily interpretable. The X-axis being time and Y-axis being the target variable along with lines of different color showing the trend in those continents. Legend is also very useful to identify the continent. My approach is different because I've plotted GDP (Income) per Capita with time, Life Expectancy with time and Infant Mortality Rate on same graph but with multiple Y-axis which are easily identifiable by color scheme. I've used world4_region file to get data for four continents and then potted the comparison for each continent and one as overall aggregate of all continents.
+It is difficult to identify the better method here as both the solutions look reasonable for a static plot approach, however I believe the plot I've used compare all three variables on same plot which makes it easy to compare the trend among themselves over the time while for Rutu's plot, it is easy to see the trend for each variable across different continents simaltaneously.
+
+
+
 ## Solution 4:
 
 Here, we're investigating the relationship between GDP per Capita and Life Expectancy. For the experiment, I'll consider GDP per Capita as X and Life Expectancy as Y because my assumption is as Income increases, people can afford better health care and get a better standard of living overall which might result into average Life Expectancy of a person. I also believe that this relationship cannot be perfectly linear as there will be an upper limit in age and as the Life Expectancy increases, the rate of increase after one point will be slow as it reaches that upper limit of age.
