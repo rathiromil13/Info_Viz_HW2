@@ -6,12 +6,14 @@ For this problem, I compared my visualization to that of Monica Mishra.
 
 Link: https://colab.research.google.com/drive/1v8EY74vQxPubjXHywpDUYo7a3FMj-GuB
 
-The similarity for the whole comparision is that we've both used world4_region file to get the distribution around 4 regions. The plot used for comparison across continents is similar except for nature of plot. We've both used interactive plots for comparing distribution across countries.
+The similarity in our visualizations is that we've both used world4_region file to get the distribution around four regions.
+For comparison across continents the plot kind we've used is similar except for the dynamic nature of the plot and for comparison across countries we've implemented interactive visualization but the concept behind the plot is completely different. Monica has used a different time range (1800-2000) and (2000-2040) and shown the change over time using two different graphs while I've used one static plot for the time range (1960 to Present). Monica has used 4 interactive plots for this task, while I've used one static and one interactive plot for the same.
 
-For visualization the distribution of income (GDP / capita) across continents, the major difference in our plot is that my plot is static while her's is interactive. It's really interesting to see this interactive plot where you can hover on the line and see the continent other than the legend which makes it visually appealing.  
-Monica has used a different time range (1800-2000) and (2000-2040) and shown the change over time using two different graphs while I've used one static plot for the time range (1960 to Present). Monica's plot is very easy to interprete with well defined X-axis and Y-axis along with appropriate color scheme for the continents while it is little confusing to understand the Y-axis values. The obersvations Monica made for different time schemes are interpretable.
+For visualization the distribution of income (GDP / capita) across continents, the idea and intent behind our plot is similar but one major difference is that my plot is static while Monica's is interactive. It's really interesting to see this interactive plot where you can hover on the line and see the continent other than the legend which makes it visually appealing. Monica's plot is very easy to interpret with well-defined X-axis and Y-axis along with an appropriate colour scheme for the continents while it is a little confusing to understand the Y-axis values. The observations Monica made for different time schemes are interpretable.
 
-For visualization of distribution of income (GDP / capita) across countries, we've both used interactive plots but the way we've applied it is very different. It is interesting to see the line plot Monica has used for this task. One plot shows change in GDP per Capita over time for all countries wherease the other one shows the same for African countries. While it is easy to interprete the values of each axis but at the same time, it is difficult to comprehend the visualiztion over countries as there are so many countries, on hovering it shows the label of all countries where few countries seem to have same color possibly due to limited color pallet of the library. For this problem, I believe the plot I've used where all the countries are on a map and change over time can be seen through color scheme is more effective.
+For visualization of the distribution of income (GDP / capita) across countries, we've both used interactive plots but the idea behind it is very different. It is interesting to see that Monica has used line plot for this task. One plot shows change in GDP per Capita over time for all countries whereas the other one shows the same for African countries while my plot is plotting colour on world map across all countries showing the GDP value changing over time with change in colour.
+
+In Monica's task, while it is easy to interpret the values of X-axis but at the same time, it is difficult to comprehend the visualization over all the countries as there are too many of them so, on hovering it shows the label of all countries which is confusing because of large number of countries as well as few countries seem to have the same colour possibly due to limited colour pallet of the library. Thus, I believe with such high dimensions involved, it'll not work well but the plot I've created are more easy to comprehend.
 
 
 ## Solution 3:
@@ -20,11 +22,21 @@ For this problem, I compared my visualization to that of Rutu Nanavati
 
 Link: https://github.com/nanavatirutu/DS5500
 
-The similarity in our visualization is that we've used static plots to answer the question. The time range selected on X-axis is also similar. The differences are again the way we've implemented the plots. Rutu has used three different plots with one Y-axis while I've used five plots each with multiple Y-axes. Rutu has compared the target variables across time for six different continenets while I've processed it down to four.
+The similarity in our visualization is that we've used static plots to answer the question. The time range selected on X-axis is also similar and it seems the transformation applied to aggregate the data is also very similar.
+The differences arise in the way we've implemented the plots. Rutu has used three different plots with one Y-axis as well as one correlation plot while I've used five plots each with multiple Y-axes. Another difference is Rutu has compared the target variables across time for six different continents while I've processed it down to four.
 
-Rutu has seperately ploted GDP (Income) per Capita with time, Life Expectancy with time and Infant Mortality Rate with time for six continents which is easily interpretable. The X-axis being time and Y-axis being the target variable along with lines of different color showing the trend in those continents. Legend is also very useful to identify the continent. My approach is different because I've plotted GDP (Income) per Capita with time, Life Expectancy with time and Infant Mortality Rate on same graph but with multiple Y-axis which are easily identifiable by color scheme. I've used world4_region file to get data for four continents and then potted the comparison for each continent and one as overall aggregate of all continents.
-It is difficult to identify the better method here as both the solutions look reasonable for a static plot approach, however I believe the plot I've used compare all three variables on same plot which makes it easy to compare the trend among themselves over the time while for Rutu's plot, it is easy to see the trend for each variable across different continents simaltaneously.
+For this task, Rutu has seperately ploted 
+(i) GDP (Income) per Capita with time 
+(ii)Life Expectancy with time 
+(iii)Child Mortality Rate with time
+(iv) Correlation plot showing correlation between GDP per Capita, Life Expectancy over time and Child Mortality over time
 
+These plots are easily interpretable. The X-axis being time and Y-axis being the target variable along with lines of different colour showing the trend in those continents. Legend is also very useful to identify the continent.
+
+For this task, my approach was different as I plotted all the variables using multi-axis plotting which allowed to fit all the dimensions over a static 2d plot where each axis has its colour scheme which makes it easy to see the trend in each variable together for a given time range.
+For this problem, I plotted the variables for different continents (4) and one plot for overall aggregate for each variable grouped by time using the above-mentioned method.
+
+It is difficult to identify the better method here as both the solutions look reasonable for a static plot approach, however I I found it little difficult to compare plot for each variable separately and then use the correlation matrix to see the relationship between themselves, so the plot I've used compare all three variables on same plot which makes it easy to compare the trend among themselves over the time while for Rutu's plot, it is easy to see the trend for each variable across different continents simultaneously. 
 
 
 ## Solution 4:
