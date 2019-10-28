@@ -56,7 +56,7 @@ As observed from the plot below, In the raw data for all countries, the data is 
 ###### Figure 2: Scatter Plot for log-transformed GDP per Capita and Life Expectancy
 The plot now shows a better relationship between both variables which would be more useful in identifying a relationship between them and now we can try our first model.
 
-<img src="https://github.com/rathiromil13/DS-5500-HW-2/blob/master/figures/Fig3.png" width="400" height ="600">
+<img src="figures/Fig3.png" width="400" height ="600">
 
 ###### Figure 3: Statistics for First Model
 
