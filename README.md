@@ -62,7 +62,7 @@ The plot now shows a better relationship between both variables which would be m
 
 Using X ~ Log (GDP per Capita) and Y ~ Life Expectancy in Years, for the data the Adj. R-Squared value obtained is 0.616 which is mainly because data is still not completely good for regression. The reasons behind that are it doesn't capture enough variables as a predictor, and the data wrangling can be performed more efficiently as here we've data corresponding to each country and continent for each year, this data doesn't capture a strong relationship without these transformations.
 
-![Fit for First Model](/figures/Reg1.png)
+![Fit for First Model](figures/Reg1.png)
 ###### Figure 4: Fit for First Model on Data
 
 For the former reason, I added the variable of time to the model. Time is an important factor here as over the time as GDP per Capita as well as Life Expectancy both have shown monotonically increasing trend. The possible reason could be as GDP per Capita increases with time, people can invest more in healthcare and get better services overall. The sanitary conditions also improve which explains that one of the other assumptions might also be true. 
