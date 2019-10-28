@@ -68,7 +68,7 @@ Using X ~ Log (GDP per Capita) and Y ~ Life Expectancy in Years, for the data th
 For the former reason, I added the variable of time to the model. Time is an important factor here as over the time as GDP per Capita as well as Life Expectancy both have shown monotonically increasing trend. The possible reason could be as GDP per Capita increases with time, people can invest more in healthcare and get better services overall. The sanitary conditions also improve which explains that one of the other assumptions might also be true. 
 Here are the results for Linear Regression with Multiple Variable
 
-<img src="https://github.com/rathiromil13/DS-5500-HW-2/blob/master/figures/time.png" width="400" height ="600">
+<img src="figures/time.png" width="400" height ="600">
 
 ###### Figure 5: Summary for First Model with Time as another variable.
 
@@ -80,7 +80,7 @@ To add more layer of data wrangling, I tried to get the mean of GDP per Capita a
 ###### Figure 5: Scatter Plot for Mean GDP per Capita and Mean Life Expectancy
 It looks good and shows an almost linear relationship between the two variables, thus next step would be to model them directly for the transformed dataset.
 
-<img src="https://github.com/rathiromil13/DS-5500-HW-2/blob/master/figures/mean1.png" width="400" height ="600">
+<img src="figures/mean1.png" width="400" height ="600">
 
 ###### Figure 6: Statistics for the model with Mean GDP per Capita and Mean Life Expectancy
 
@@ -88,7 +88,7 @@ Here, the Adj. R-Squared is very high (~0.955), upon further inspection we can o
 
 Now, on exploring the relationship between Life Expectancy and log of GDP per Capita, we can see coefficient is positive which is expected out of it and Adj. R-Squared is still high of (~0.946). This model achieved the best performance among the other but again it lacks information about the data which can help us in identifying the true relationship between the two variables.
 
-<img src="https://github.com/rathiromil13/DS-5500-HW-2/blob/master/figures/Best.png" width="400" height ="600">
+<img src="figures/Best.png" width="400" height ="600">
 
 ###### Figure 7: Statistics for the model with Log of Mean GDP per Capita and Mean Life Expectancy
 
@@ -118,7 +118,7 @@ The workflow for this problem is very similar to the previous problem except for
 
 As a baseline model, we'll run OLS regression on log-transformed values. The Adj. R-Squared is 0.69 which will be improved further. Again, here using only these two variables after performing log transformation is not a good idea as we've not considered other important factors.
 
-<img src="https://github.com/rathiromil13/DS-5500-HW-2/blob/master/figures/b1.png" width="400" height ="600">
+<img src="figures/b1.png" width="400" height ="600">
 
 ###### Figure 11: Statistics for Log GDP per Capita and Log Child Mortality
 
@@ -128,7 +128,7 @@ As a baseline model, we'll run OLS regression on log-transformed values. The Adj
 
 Now, adding time as a variable to the model, the Adj. R-Squared has improved considerably to 0.808 with coefficients of GDP per Capita as ~(-0.62) which is similar to the previous model but the added time factor also has a negative coefficient which has improved the model further. It can be understood that with time and an increase in GDP, the Child Mortality Rate has decreased with rise in awareness and better health and sanitation facilities available.
 
-<img src="https://github.com/rathiromil13/DS-5500-HW-2/blob/master/figures/b3.png" width="400" height ="600">
+<img src="figures/b3.png" width="400" height ="600">
 
 ###### Figure 13: Statistics for Log GDP per Capita and Log Mean Child Mortality Rate along with time.
 
@@ -139,7 +139,7 @@ Another way to approach this could be to consider the aggregated values of GDP p
 
 For the aggregated data, I tried simple Linear Regression on both variables to see how it performs and captures the relationship between those two. The Adj. R-Squared has again increased and improved to 0.919 and the coefficient of the mean of log-transformed GDP per Capita has also reduced to ~(-2.02) which shows that it has improved from the previous model
 
-<img src="https://github.com/rathiromil13/DS-5500-HW-2/blob/master/figures/b4.png" width="400" height ="600">
+<img src="figures/b4.png" width="400" height ="600">
 
 ###### Figure 14: Statistics for the best model
 
