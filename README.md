@@ -1,5 +1,9 @@
 # DS-5500-HW 2
 
+## Solution 1:
+
+Already on Piazza
+
 ## Solution 2:
 
 For this problem, I compared my visualization to that of Monica Mishra.
@@ -91,7 +95,7 @@ Now, on exploring the relationship between Life Expectancy and log of GDP per Ca
 ![Mean GPD per capita and Mean Life Expectancy for each year](figures/Reg2.png)
 ###### Figure 8: Fit for the best model
 
-The major challenge here is to somehow capture the relationship which has many dimensions and factors such as the distribution of income which is not known. It is challenging to incorporate all information in our model. It would make more sense to perform the analysis for a given country and observe the trend. It'll help us in identifying the general case as well as the outliers where we might see a negative relationship between two variables due to factors such as the distribution of income.
+The major challenge here is to somehow capture the relationship which has many dimensions and factors such as the distribution of income which is not known. It is challenging to incorporate all information in our model. It would make more sense to perform the analysis for a given country and observe the trend. It'll help us in identifying the general case as well as the outliers where we might see a negative relationship between two variables due to factors such as the distribution of income. We also need to consider autocorrelation explained at the end.
 
 The final equation would be Y ~ X + c where
 Y: Average Life Expectancy
@@ -139,7 +143,7 @@ For the aggregated data, I tried simple Linear Regression on both variables to s
 
 ###### Figure 14: Statistics for the best model
 
-On observing the fit, we can say it looks very close to linear graph with a slope greater than 90 degrees which shows the negative relationship but the drawback again would be not considering certain factors that are important to this along with GDP per Capita. It is not the best method to aggregate as it doesn't tell us about the distribution of income but overall gives a good sense of the relationship between the two variables.
+On observing the fit, we can say it looks very close to linear graph with a slope greater than 90 degrees which shows the negative relationship but the drawback again would be not considering certain factors that are important to this along with GDP per Capita. It is not the best method to aggregate as it doesn't tell us about the distribution of income but overall gives a good sense of the relationship between the two variables. We also have to consider autocorrelation issue explained at the end.
 
 The equation for this relationship can be: mean(log(X)) ~ mean(log(Y)) + c for a given year.
 
@@ -148,3 +152,6 @@ Where X: GDP per Capita
 
 ![Mean Log GPD per Capita and Mean Log Child Mortality Rate](figures/last.png)
 ###### Figure 15: Fit for the best model
+
+### Note:
+Autocorrelation is a type of serial dependence of errors in a particular time stamp t on a previous timestamp t - d, where d is the difference between two timestamps. The presence of autocorrelation results in inaccurate evaluation metric values (standard error, R^2, MSE and others) and ultimately a wrong estimate of coefficients are returned. Therefore, such a phenomenon affects the research analysis hugely by generating inaccurate predictictions and results.
