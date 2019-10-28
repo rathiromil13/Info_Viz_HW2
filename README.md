@@ -104,6 +104,8 @@ On observing the fit, we can say it looks very close to linear graph with a slop
 
 The equation for this relationship can be: mean(log(X)) ~ mean(log(Y)) + c for a given year.
 
-![Mean Log GPD per capita and Mean Log Child Mortality Rate](figures/last.png)
+Where X: GDP per Capita
+      Y: Child Mortality
+
+![Mean Log GPD per Capita and Mean Log Child Mortality Rate](figures/last.png)
 ###### Figure 15: Fit for the best model
-.
