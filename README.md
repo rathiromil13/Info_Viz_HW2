@@ -77,12 +77,12 @@ The Adj. R-Squared has improved to ~0.70 with the inclusion of time.
 To add more layer of data wrangling, I tried to get the mean of GDP per Capita and Life Expectancy across all countries for a given year. The distribution looks as follows:
 
 ![Mean GPD per capita and Mean Life Expectancy for each year](figures/Mean_Life_GDP.png)
-###### Figure 5: Scatter Plot for Mean GDP per Capita and Mean Life Expectancy
+###### Figure 6: Scatter Plot for Mean GDP per Capita and Mean Life Expectancy
 It looks good and shows an almost linear relationship between the two variables, thus next step would be to model them directly for the transformed dataset.
 
 <img src="figures/mean1.png" width="400" height ="600">
 
-###### Figure 6: Statistics for the model with Mean GDP per Capita and Mean Life Expectancy
+###### Figure 7: Statistics for the model with Mean GDP per Capita and Mean Life Expectancy
 
 Here, the Adj. R-Squared is very high (~0.955), upon further inspection we can observe that coefficient of GDP per Capita is very low (~0.0016) which reduces it's effect to almost nil. Thus we need to try another transformation to get a better model.
 
@@ -90,10 +90,10 @@ Now, on exploring the relationship between Life Expectancy and log of GDP per Ca
 
 <img src="figures/Best.png" width="400" height ="600">
 
-###### Figure 7: Statistics for the model with Log of Mean GDP per Capita and Mean Life Expectancy
+###### Figure 8: Statistics for the model with Log of Mean GDP per Capita and Mean Life Expectancy
 
 ![Mean GPD per capita and Mean Life Expectancy for each year](figures/Reg2.png)
-###### Figure 8: Fit for the best model
+###### Figure 9: Fit for the best model
 
 The major challenge here is to somehow capture the relationship which has many dimensions and factors such as the distribution of income which is not known. It is challenging to incorporate all information in our model. It would make more sense to perform the analysis for a given country and observe the trend. It'll help us in identifying the general case as well as the outliers where we might see a negative relationship between two variables due to factors such as the distribution of income. We also need to consider autocorrelation explained at the end.
 
@@ -108,11 +108,11 @@ In this problem, we've to identify the relationship between GDP per Capita and C
 
 Here's what the scatter plot looks like:
 ![Relationship between GDP per Capita and Child Mortality](figures/C1.png)
-###### Figure 9: Relationship between GDP per Capita and Child Mortality
+###### Figure 10: Relationship between GDP per Capita and Child Mortality
 
 This requires log transformation for both the variables. On transforming variables, the scatter plot shows a better relationship between the two variables.
 ![Log GPD per capita and Log Child Mortality Rate](figures/C2.png)
-###### Figure 10: Relationship between log-transformed GDP per Capita and Child Mortality
+###### Figure 11: Relationship between log-transformed GDP per Capita and Child Mortality
 
 The workflow for this problem is very similar to the previous problem except for the transformations performed. Here, since we're expecting a negative correlation, the model is expected to have a negative coefficient for X.
 
@@ -120,28 +120,28 @@ As a baseline model, we'll run OLS regression on log-transformed values. The Adj
 
 <img src="figures/b1.png" width="400" height ="600">
 
-###### Figure 11: Statistics for Log GDP per Capita and Log Child Mortality
+###### Figure 12: Statistics for Log GDP per Capita and Log Child Mortality
 
 
 ![Log GPD per capita and Log Child Mortality Rate](figures/model.png)
-###### Figure 12: Plot with the fit for Log GDP per Capita and Log Child Mortality
+###### Figure 13: Plot with the fit for Log GDP per Capita and Log Child Mortality
 
 Now, adding time as a variable to the model, the Adj. R-Squared has improved considerably to 0.808 with coefficients of GDP per Capita as ~(-0.62) which is similar to the previous model but the added time factor also has a negative coefficient which has improved the model further. It can be understood that with time and an increase in GDP, the Child Mortality Rate has decreased with rise in awareness and better health and sanitation facilities available.
 
 <img src="figures/b3.png" width="400" height ="600">
 
-###### Figure 13: Statistics for Log GDP per Capita and Log Mean Child Mortality Rate along with time.
+###### Figure 14: Statistics for Log GDP per Capita and Log Mean Child Mortality Rate along with time.
 
 Another way to approach this could be to consider the aggregated values of GDP per Capita and Child Mortality Rate. From the data frame, we can achieve this by taking the mean values of each log-transformed variable for each year. This will give us a data frame with mean values for the corresponding year. The good think about this approach is it reduces the dimension of the dataset by incorporating the information from the table (by taking mean over time). Here's how the relationship looks after the aggregation.
 
 ![Log transformed Mean GPD per capita and Log transformed Mean Child Mortality Rate](figures/C3.png)
-###### Figure 13: Scatter plot for Mean GDP per Capita and mean Child Mortality Rate after log transformation
+###### Figure 15: Scatter plot for Mean GDP per Capita and mean Child Mortality Rate after log transformation
 
 For the aggregated data, I tried simple Linear Regression on both variables to see how it performs and captures the relationship between those two. The Adj. R-Squared has again increased and improved to 0.919 and the coefficient of the mean of log-transformed GDP per Capita has also reduced to ~(-2.02) which shows that it has improved from the previous model
 
 <img src="figures/b4.png" width="400" height ="600">
 
-###### Figure 14: Statistics for the best model
+###### Figure 16: Statistics for the best model
 
 On observing the fit, we can say it looks very close to linear graph with a slope greater than 90 degrees which shows the negative relationship but the drawback again would be not considering certain factors that are important to this along with GDP per Capita. It is not the best method to aggregate as it doesn't tell us about the distribution of income but overall gives a good sense of the relationship between the two variables. We also have to consider autocorrelation issue explained at the end.
 
@@ -151,7 +151,7 @@ Where X: GDP per Capita
       Y: Child Mortality
 
 ![Mean Log GPD per Capita and Mean Log Child Mortality Rate](figures/last.png)
-###### Figure 15: Fit for the best model
+###### Figure 17: Fit for the best model
 
 ### Note:
 Autocorrelation is a type of serial dependence of errors in a particular time stamp t on a previous timestamp t - d, where d is the difference between two timestamps. The presence of autocorrelation results in inaccurate evaluation metric values (standard error, R^2, MSE and others) and ultimately a wrong estimate of coefficients are returned. Therefore, such a phenomenon affects the research analysis hugely by generating inaccurate predictictions and results.
